@@ -1,0 +1,223 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Comment CommentText="Repository">
+    <Position X="1.496" Y="0.753" Height="0.291" Width="0.976" />
+  </Comment>
+  <Comment CommentText="Repository">
+    <Position X="11.237" Y="0.736" Height="0.291" Width="0.976" />
+  </Comment>
+  <Comment CommentText="Entity object">
+    <Position X="4.767" Y="0.746" Height="0.291" Width="0.976" />
+  </Comment>
+  <Comment CommentText="Entity object">
+    <Position X="7.761" Y="0.748" Height="0.291" Width="0.976" />
+  </Comment>
+  <Comment CommentText="Value object">
+    <Position X="7.018" Y="3.244" Height="0.291" Width="0.976" />
+  </Comment>
+  <Comment CommentText="Value object">
+    <Position X="5.762" Y="5.505" Height="0.291" Width="0.976" />
+  </Comment>
+  <Comment CommentText="Value object">
+    <Position X="3.02" Y="4.516" Height="0.291" Width="0.976" />
+  </Comment>
+  <Comment CommentText="Value object">
+    <Position X="1.012" Y="4.519" Height="0.291" Width="0.976" />
+  </Comment>
+  <Comment CommentText="Factory">
+    <Position X="9.271" Y="4.745" Height="0.291" Width="0.976" />
+  </Comment>
+  <Comment CommentText="Factory">
+    <Position X="11.275" Y="4.776" Height="0.291" Width="0.976" />
+  </Comment>
+  <Comment CommentText="Service">
+    <Position X="9.276" Y="6.255" Height="0.291" Width="0.976" />
+  </Comment>
+  <Comment CommentText="Service">
+    <Position X="11.27" Y="6.276" Height="0.291" Width="0.976" />
+  </Comment>
+  <Class Name="Fisherman.DomainModel.FishCatch" BaseTypeListCollapsed="true">
+    <Position X="0.5" Y="4.25" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AEAQBAAAIgAAAACAAAAAACAAAgAAAYAAAAAgAIAAAAA=</HashCode>
+      <FileName>FishCatch.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Fisherman.DomainModel.FishingRecord">
+    <Position X="4" Y="0.5" Width="1.75" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <AssociationLine Name="NatureContex" Type="Fisherman.DomainModel.NatureEvents" FixedFromPoint="true">
+      <Path>
+        <Point X="5.625" Y="2.507" />
+        <Point X="5.625" Y="5.25" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="FishCatch" Type="Fisherman.DomainModel.FishCatch" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="4.375" Y="2.507" />
+        <Point X="4.375" Y="3.95" />
+        <Point X="1.188" Y="3.95" />
+        <Point X="1.188" Y="4.25" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAgAAgAAAAEABAAAAAIRAAAAAEAgAAAAICAAAAAAAAA=</HashCode>
+      <FileName>FishingRecord.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="DateTimeInterval" />
+      <Property Name="Location" />
+      <Property Name="NatureContex" />
+      <Property Name="FishCatch" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Fisherman.DomainModel.FishingRecordRepository">
+    <Position X="0.5" Y="0.5" Width="2" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>QAAEAIBAAIAAAQAAAAAAAAQAFAAAAAABAAAAAAAAQAA=</HashCode>
+      <FileName>FishingRecordRepository.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Field Name="_records" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Fisherman.DomainModel.Location" BaseTypeListCollapsed="true">
+    <Position X="7.25" Y="0.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAIIAAEEAAIAAAAAAAAAAQAIAAAAAAgAAAAABAAAAA=</HashCode>
+      <FileName>Location.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Coordinates" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Fisherman.DomainModel.Statistics">
+    <Position X="8.5" Y="6" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAQAAAAAAAAAAAAAAAAAAAABBAASAAAAAAAAAA=</HashCode>
+      <FileName>Statistics.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Fisherman.DomainModel.DateTimeInterval">
+    <Position X="2.5" Y="4.25" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAIAAAAABCAAgAAAAAAAAAAAAAAAAAAAAAAAAAQAAAA=</HashCode>
+      <FileName>DateTimeInterval.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Fisherman.DomainModel.NatureEvents">
+    <Position X="5.25" Y="5.25" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <AssociationLine Name="Wind" Type="Fisherman.DomainModel.Winds" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="6.75" Y="6.27" />
+        <Point X="7.531" Y="6.27" />
+        <Point X="7.531" Y="7.25" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="MoonPhase" Type="Fisherman.DomainModel.MoonPhases" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="5.25" Y="6.27" />
+        <Point X="4.406" Y="6.27" />
+        <Point X="4.406" Y="7.25" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAACAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAEAAQQAQA=</HashCode>
+      <FileName>NatureEvents.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Wind" />
+      <Property Name="MoonPhase" />
+      <Property Name="Tide" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Fisherman.DomainModel.LocationRepository">
+    <Position X="10.25" Y="0.5" Width="2" />
+    <AssociationLine Name="_locations" Type="Fisherman.DomainModel.Location" FixedFromPoint="true">
+      <Path>
+        <Point X="10.25" Y="1.342" />
+        <Point X="8.75" Y="1.342" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAEAAACAAAAAyAAAAEAAEQABAAAAAAAAAQAAAAEAAA=</HashCode>
+      <FileName>LocationRepository.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Field Name="_locations" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Fisherman.DomainModel.Search">
+    <Position X="10.5" Y="6" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAIAAAAAABAAAAAAAAAAAAIAAAAAAAAAAAAgAA=</HashCode>
+      <FileName>Search.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Fisherman.DomainModel.Coordinates">
+    <Position X="6.5" Y="3" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAEAAAAAAAIAIAAAAAAAAAAAAAAAAABAAEAA=</HashCode>
+      <FileName>Coordinates.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Fisherman.DomainModel.FishingRecordFactory">
+    <Position X="8.5" Y="4.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAA=</HashCode>
+      <FileName>FishingRecordFactory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Fisherman.DomainModel.LocationFactory">
+    <Position X="10.5" Y="4.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>LocationFactory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="Fisherman.DomainModel.MoonPhases" Collapsed="true">
+    <Position X="3.25" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAUAAAAgAAAAAAAAAAAAAAAAgAAAAAAAAgIA=</HashCode>
+      <FileName>MoonPhases.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Fisherman.DomainModel.Tides" Collapsed="true">
+    <Position X="5" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAQAAAAAAAAAAIAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Tides.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Fisherman.DomainModel.Winds" Collapsed="true">
+    <Position X="6.75" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EQAAAAAAAAAACEAAAAAAAAAAgQgEAgAAAAAAAhDIAAA=</HashCode>
+      <FileName>Winds.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
